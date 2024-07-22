@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>معدل ترم 2</title>
+		<link rel="icon" type="image/x-icon" href="./favicon.ico">
+		<meta name="theme-color" content="#715aff">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simpledotcss@latest/simple.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap-grid.rtl.min.css"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css"/>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700;900&display=swap");
+			@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap");
+			@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400&display=swap");
+			:root {
+				--accent-bg: #f0eeff;
+				--accent: #715aff;
+				--preformatted: #333;
+				font-family: "Source Sans Pro", "Vazirmatn", var(--sans-font);
+			}
+			@media (prefers-color-scheme: dark) {
+				:root {
+					color-scheme: dark;
+					--accent-bg: #2b2b2b;
+					--accent: #a682ff;
+					--preformatted: #ccc;
+				}
+			}
+			body { word-wrap: break-word; }
+			code { color: var(--preformatted); font-family: "Source Code Pro", var(--mono-font) }
+			header { font-weight: 900; text-align: center; }
+			footer { font-weight: 700; text-align: center; }
+			.section { margin: 2rem 0; }
+			button { font-family: inherit; font-weight: bold; }
+			input, select, img, button { width: 100%; }
+			.row-sm.col-md { margin: .25rem; }
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav style="margin-bottom: .5rem;">
+				<a href="https://t.me/IUMS1402Memes" target="_blank">کانال میم 1402</a>
+				<a href="https://t.me/IUMSClassPlannerBot" target="_blank">ربات پلنر کلاس‌های IUMS (فعلاً خاموش)</a>
+			</nav>
+			<h1 style="font-weight: 900;">معدل بگیر دانشجوی بدبخت</h1>
+			<span>ترم 2 پزشکی IUMS</span>
+		</header>
+		<main class="container">
+			<div id="row-1-div" class="row justify-content-space-between section" style="--bs-gap: .5rem .5rem">
+				<div class="row-sm col-md">
+					<label for="s1">آناتومی سر و گردن: (1.2 واحد) </label>
+					<input type="number" id="s1" onInput="inputChange('s1')" value="0" min="0" max="20">
+				</div>
+				<div class="row-sm col-md">
+					<label for="s2">آناتومی سر و گردن عملی: (0.5 واحد) </label>
+					<input type="number" id="s2" onInput="inputChange('s2')" value="0" min="0" max="20">
+				</div>
+			</div>
+			<div id="row-2-div" class="row justify-content-space-between section" style="--bs-gap: .5rem .5rem">
+				<div class="row-sm col-md">
+					<label for="s3">آناتومی قلب: (1.0 واحد) </label>
+					<input type="number" id="s3" onInput="inputChange('s3')" value="0" min="0" max="20">
+				</div>
+				<div class="row-sm col-md">
+					<label for="s4">آناتومی قلب عملی: (0.5 واحد) </label>
+					<input type="number" id="s4" onInput="inputChange('s4')" value="0" min="0" max="20">
+				</div>
+			</div>
+			<div id="row-3-div" class="row justify-content-space-between section" style="--bs-gap: .5rem .5rem">
+				<div class="row-sm col-md">
+					<label for="s5">بیوشیمی دیسیپلین: (1.3 واحد) </label>
+					<input type="number" id="s5" onInput="inputChange('s5')" value="0" min="0" max="20">
+				</div>
+				<div class="row-sm col-md">
+					<label for="s6">بیوشیمی دیسیپلین عملی: (0.4 واحد) </label>
+					<input type="number" id="s6" onInput="inputChange('s6')" value="0" min="0" max="20">
+				</div>
+			</div>
+			<div id="row-4-div" class="row justify-content-space-between section" style="--bs-gap: .5rem .5rem">
+				<div class="row-sm col-md">
+					<label for="s7">فیزیولوژی گردش خون: (1.1 واحد) </label>
+					<input type="number" id="s7" onInput="inputChange('s7')" value="0" min="0" max="20">
+				</div>
+				<div class="row-sm col-md">
+					<label for="s8">فیزیولوژی قلب: (0.5 واحد) </label>
+					<input type="number" id="s8" onInput="inputChange('s8')" value="0" min="0" max="20">
+				</div>
+			</div>
+			<div id="row-5-div" class="row justify-content-space-between section" style="--bs-gap: .5rem .5rem">
+				<div class="row-sm col-md">
+					<label for="s9">فیزیولوژی خون: (0.3 واحد) </label>
+					<input type="number" id="s9" onInput="inputChange('s9')" value="0" min="0" max="20">
+				</div>
+				<div class="row-sm col-md">
+					<label for="s10">فیزیولوژی عملی: (1.0 واحد) </label>
+					<input type="number" id="s10" onInput="inputChange('s10')" value="0" min="0" max="20">
+				</div>
+			</div>
+			<div id="row-6-div" class="row justify-content-space-between section" style="--bs-gap: .5rem .5rem">
+				<div class="row-sm col-md">
+					<label for="s11">زبان تخصصی 1/عمومی: (3.0 واحد) </label>
+					<input type="number" id="s11" onInput="inputChange('s11')" value="0" min="0" max="20">
+				</div>
+				<div class="row-sm col-md">
+					<label for="s12">اصول اپیدمیولوژی: (2.0 واحد) </label>
+					<input type="number" id="s12" onInput="inputChange('s12')" value="0" min="0" max="20">
+				</div>
+			</div>
+			<div id="row-7-div" class="row justify-content-space-between section" style="--bs-gap: .5rem .5rem">
+				<div class="row-sm col-md">
+					<label for="s13">اندیشه اسلامی: (2.0 واحد) </label>
+					<input type="number" id="s13" onInput="inputChange('s13')" value="0" min="0" max="20">
+				</div>
+				<div class="row-sm col-md">
+					<label for="s14">انقلاب اسلامی: (2.0 واحد) </label>
+					<input type="number" id="s14" onInput="inputChange('s14')" value="0" min="0" max="20">
+				</div>
+			</div>
+			<div id="row-8-div" class="row justify-content-space-between section" style="--bs-gap: .5rem .5rem">
+				<div class="row-sm col-md">
+					<label for="s15">تاریخ امامت: (2.0 واحد) </label>
+					<input type="number" id="s15" onInput="inputChange('s15')" value="0" min="0" max="20">
+				</div>
+				<div class="row-sm col-md">
+					<label for="s16">تربیت بدنی 1: (1.0 واحد) </label>
+					<input type="number" id="s16" onInput="inputChange('s16')" value="0" min="0" max="20">
+				</div>
+			</div>
+			<div id="result-div" class="row section" style="text-align: center">
+				<span>اینم معدلت:</span>
+				<h3 id="result">0</h3>
+			</div>
+		</main>
+		<footer>
+			<p dir="rtl">خمیدرضا © کپی رایت چیه؟ بردار استفاده کن</p>
+		</footer>
+		<script>
+			function updateResult() {
+				const s1 = Number(document.getElementById("s1").value);
+				const s2 = Number(document.getElementById("s2").value);
+				const s3 = Number(document.getElementById("s3").value);
+				const s4 = Number(document.getElementById("s4").value);
+				const s5 = Number(document.getElementById("s5").value);
+				const s6 = Number(document.getElementById("s6").value);
+				const s7 = Number(document.getElementById("s7").value);
+				const s8 = Number(document.getElementById("s8").value);
+				const s9 = Number(document.getElementById("s9").value);
+				const s10 = Number(document.getElementById("s10").value);
+				const s11 = Number(document.getElementById("s11").value);
+				const s12 = Number(document.getElementById("s12").value);
+				const s13 = Number(document.getElementById("s13").value);
+				const s14 = Number(document.getElementById("s14").value);
+				const s15 = Number(document.getElementById("s15").value);
+				const s16 = Number(document.getElementById("s16").value);
+				const mean = (s1*1.2 + s2*0.5 + s3*1 + s4*0.5 + s5*1.3 + s6*0.4 + s7*1.1 + s8*0.5 + s9*0.3 + s10*1 + s11*3 + s12*2 + s13*2 + s14*2 + s15*2 + s16*1) / 19.8;
+				const result = Math.round(mean * 100) / 100;
+				document.getElementById("result").innerText = result;
+			}
+
+			function inputChange(id) {
+				if (Number(document.getElementById(id).value) > 20) {
+					document.getElementById(id).value = 20;
+				} else if (Number(document.getElementById(id).value) < 0) {
+					document.getElementById(id).value = 0;
+				};
+				document.getElementById(id).value = Number(document.getElementById(id).value);
+				updateResult();
+			}
+		</script>
+	</body>
+</html>
