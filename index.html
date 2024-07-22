@@ -34,6 +34,7 @@
 			.section { margin: 2rem 0; }
 			button { font-family: inherit; font-weight: bold; }
 			input, select, img, button { width: 100%; }
+			input { text-align: center; }
 			.row-sm.col-md { margin: .25rem; }
 		</style>
 	</head>
@@ -164,7 +165,6 @@
 				} else if (Number(document.getElementById(id).value) < 0) {
 					document.getElementById(id).value = 0;
 				};
-				document.getElementById(id).value = Number(document.getElementById(id).value);
 				updateResult();
 			}
 		</script>
