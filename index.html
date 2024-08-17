@@ -3,7 +3,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>معدل ترم 2</title>
+		<title>IUMS 1402 | معدل ترم 2</title>
+		<meta name="description" content="بچه‌ها معدل می‌خواستن؛ اینم می‌گیره."/>
+		<meta property="og:title" content="معدل ترم 2"/>
+		<meta property="og:site_name" content="IUMS 1402"/>
+		<meta property="og:description" content="بچه‌ها معدل می‌خواستن؛ اینم می‌گیره."/>
 		<link rel="icon" type="image/x-icon" href="./favicon.ico">
 		<meta name="theme-color" content="#715aff">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simpledotcss@latest/simple.min.css">
@@ -44,7 +48,7 @@
 				<a href="https://t.me/IUMS1402Memes" target="_blank">کانال میم 1402</a>
 				<a href="https://t.me/IUMSClassPlannerBot" target="_blank">ربات پلنر کلاس‌های IUMS (فعلاً خاموش)</a>
 			</nav>
-			<h1 style="font-weight: 900;">معدل بگیر دانشجوی بدبخت</h1>
+			<h1 style="font-weight: 900;">معدل می‌گیره</h1>
 			<span>ترم 2 پزشکی IUMS</span>
 		</header>
 		<main class="container">
@@ -156,6 +160,8 @@
 				const s16 = Number(document.getElementById("s16").value);
 				const mean = (s1*1.2 + s2*0.5 + s3*1 + s4*0.5 + s5*1.3 + s6*0.4 + s7*1.1 + s8*0.5 + s9*0.3 + s10*1 + s11*3 + s12*2 + s13*2 + s14*2 + s15*2 + s16*1) / 19.8;
 				const result = Math.round(mean * 100) / 100;
+				scores = [{name: "s1", score: s1}, {name: "s2", score: s2}, {name: "s3", score: s3}, {name: "s4", score: s4}, {name: "s5", score: s5}, {name: "s6", score: s6}, {name: "s7", score: s7}, {name: "s8", score: s8}, {name: "s9", score: s9}, {name: "s10", score: s10}, {name: "s11", score: s11}, {name: "s12", score: s12}, {name: "s13", score: s13}, {name: "s14", score: s14}, {name: "s15", score: s15}, {name: "s16", score: s16}];
+				window.localStorage.setItem("scores", JSON.stringify(scores));
 				document.getElementById("result").innerText = result;
 			}
 
@@ -165,6 +171,18 @@
 				} else if (Number(document.getElementById(id).value) < 0) {
 					document.getElementById(id).value = 0;
 				};
+				updateResult();
+			}
+
+			if (localStorage.getItem("scores") === null) {
+				scores = [{name: "s1", score: 0}, {name: "s2", score: 0}, {name: "s3", score: 0}, {name: "s4", score: 0}, {name: "s5", score: 0}, {name: "s6", score: 0}, {name: "s7", score: 0}, {name: "s8", score: 0}, {name: "s9", score: 0}, {name: "s10", score: 0}, {name: "s11", score: 0}, {name: "s12", score: 0}, {name: "s13", score: 0}, {name: "s14", score: 0}, {name: "s15", score: 0}, {name: "s16", score: 0}];
+				window.localStorage.setItem("scores", JSON.stringify(scores));
+				updateResult();
+			} else {
+				scores = JSON.parse(window.localStorage.getItem("scores"));
+				for (l in scores) {
+					document.getElementById(scores[l].name).value = scores[l].score;
+				}
 				updateResult();
 			}
 		</script>
