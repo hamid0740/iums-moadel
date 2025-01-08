@@ -131,7 +131,7 @@
 			
 			function addCourse() {
 				courses = JSON.parse(window.localStorage.getItem("courses"));
-				courses.push({name: "", unit: 0.0, score: 0});
+				courses.push({name: "درس جدید", unit: 0.0, score: 0});
 				window.localStorage.setItem("courses", JSON.stringify(courses));
 				renderCourses(courses);
 				updateResult(courses);
