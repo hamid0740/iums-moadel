@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>IUMS 1402 | معدل ترم 3</title>
+		<title>IUMS 1402 | معدل ترم 4</title>
 		<meta name="description" content="بچه‌ها معدل می‌خواستن؛ اینم می‌گیره."/>
-		<meta property="og:title" content="معدل ترم 3"/>
+		<meta property="og:title" content="معدل ترم 4"/>
 		<meta property="og:site_name" content="IUMS Med 1402 Mehr"/>
 		<meta property="og:description" content="بچه‌ها معدل می‌خواستن؛ اینم می‌گیره."/>
 		<link rel="icon" type="image/x-icon" href="./favicon.ico">
@@ -48,38 +48,36 @@
 				<a href="https://t.me/IUMSClassPlannerBot" target="_blank">ربات پلنر کلاس‌های IUMS (فعلاً خاموش)</a>
 			</nav>
 			<h1 style="font-weight: 900;">معدل می‌گیره</h1>
-			<span>ترم 3 پزشکی IUMS</span>
+			<span>ترم 4 پزشکی IUMS</span>
 		</header>
 		<main id="courses-div" class="container">
 			<!-- Dynamic shit -->
-			<!-- This is a message for yall. I didn't do this for any of you, I don't fuck w any of you tbh. Did it and suited it the best for only ONE person. -->
+			<!-- This is a message for yall. I didn't do this for any of you, I don't fuck w any of you tbh. -->
 		</main>
 		<footer>
 			<p dir="rtl">خمیدرضا © کپی رایت چیه؟ بردار استفاده کن</p>
 		</footer>
 		<script>
 			const defaultCourses = [
-				{name: "آناتومی گوارش نظری", unit: 1.5, score: 0},
-				{name: "آناتومی گوارش عملی", unit: 0.5, score: 0},
-				{name: "فیزیولوژی گوارش", unit: 0.6, score: 0},
-				{name: "آناتومی ادراری نظری", unit: 0.8, score: 0},
-				{name: "آناتومی ادراری عملی", unit: 0.2, score: 0},
-				{name: "فیزیولوژی کلیه", unit: 0.7, score: 0},
-				{name: "بیوشیمی کلیه", unit: 0.2, score: 0},
-				{name: "آناتومی غدد نظری", unit: 0.2, score: 0},
-				{name: "آناتومی غدد عملی", unit: 0.2, score: 0},
-				{name: "فیزیولوژی غدد", unit: 1.2, score: 0},
-				{name: "بیوشیمی هورمون", unit: 0.7, score: 0},
-				{name: "باکتری نظری", unit: 2.4, score: 0},
-				{name: "باکتری عملی", unit: 0.6, score: 0},
-				{name: "ویروس", unit: 1.0, score: 0},
-				{name: "فارسی", unit: 3.0, score: 0},
-				{name: "زبان تخصصی", unit: 3.0, score: 0},
-				{name: "فرهنگ و تمدن", unit: 2.0, score: 0},
-				{name: "تربیت بدنی", unit: 1.0, score: 0},
-				{name: "فیزیک پزشکی نظری", unit: 1.8, score: 0},
-				{name: "فیزیک پزشکی عملی", unit: 0.2, score: 0},
-				{name: "دانش خانواده", unit: 2.0, score: 0},
+				{name: "آناتومی تنفس نظری", unit: 0.5, score: 0},
+				{name: "آناتومی تنفس عملی", unit: 0.2, score: 0},
+				{name: "فیزیولوژی تنفس", unit: 0.6, score: 0},
+				{name: "آناتومی حواس ویژه نظری", unit: 0.8, score: 0},
+				{name: "آناتومی حواس ویژه عملی", unit: 0.1, score: 0},
+				{name: "فیزیولوژی حواس ویژه", unit: 0.6, score: 0},
+				{name: "آناتومی اعصاب نظری", unit: 1.5, score: 0},
+				{name: "آناتومی اعصاب عملی", unit: 0.4, score: 0},
+				{name: "فیزیولوژی اعصاب", unit: 0.8, score: 0},
+				{name: "ایمونولوژی نظری", unit: 1.8, score: 0},
+				{name: "ایمونولوژی عملی", unit: 0.2, score: 0},
+				{name: "انگل نظری", unit: 1.6, score: 0},
+				{name: "انگل عملی", unit: 0.4, score: 0},
+				{name: "قارچ نظری", unit: 0.9, score: 0},
+				{name: "قارچ عملی", unit: 0.1, score: 0},
+				{name: "دانش خانواده", unit: 3.0, score: 0},
+				{name: "تفسیر قرآن", unit: 3.0, score: 0},
+				{name: "مدیریت سلامت", unit: 2.0, score: 0},
+				{name: "هوش مصنوعی", unit: 1.0, score: 0}
 			];
 
 			function renderCourses(courses) {
@@ -202,8 +200,8 @@
 				window.localStorage.setItem("courses", JSON.stringify(courses));
 			};
 
-			if (localStorage.getItem("courses") === null || (localStorage.getItem("version") === null || localStorage.getItem("version") != "3.0")) {
-				window.localStorage.setItem("version", "3.0");
+			if (localStorage.getItem("courses") === null || (localStorage.getItem("version") === null || localStorage.getItem("version") != "4.0")) {
+				window.localStorage.setItem("version", "4.0");
 				courses = defaultCourses;
 				window.localStorage.setItem("courses", JSON.stringify(courses));
 				renderCourses(courses);
@@ -216,3 +214,4 @@
 		</script>
 	</body>
 </html>
+
